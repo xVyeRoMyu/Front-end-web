@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Block scope with Let & Const</title>
+	</head>
+	<body>
+		<script>
+			if (true) {
+				let x = 10;
+				const y = 20;
+				console.log("Nilai x:", x);
+				console.log("Nilai y:", y);
+			}
+			
+			console.log("Nilai x di luar block", x);
+		</script>
+	</body>
+</html>

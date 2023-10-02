@@ -1,0 +1,62 @@
+<!DCOTYPE html>
+<html>
+	<body>
+	<script>
+		//create class
+		class Calculator {
+			constructor(myName) {
+				this.studentName = myName;
+			}
+		
+		//display nama student
+		printStudent() {
+			return 'Nama saya: ' + this.studentName;
+		}
+		
+		//penjumlahan
+		add(a,b) {
+			return a + b;
+		}
+		
+		//pengurangan
+		substract(a, b) {
+			return a - b;
+		}
+		
+		//perkalian
+		multiply(a,b) {
+			return a * b;
+		}
+		
+		//pembagian
+		divide(a,b) {
+			return a / b;
+		}
+	}
+	
+	//create object of class
+	const myCal = new Calculator("Ticoalu, Alexander John");
+	document.write("<p>" + myCal.printStudent() + "</p>");
+	
+	//create a function
+	function calculate(a,b) {
+		const add = myCal.add(a, b);
+		const substract = myCal.substract(a, b);
+		const multiply = myCal.multiply(a, b);
+		const divide = myCal.divide(a, b);
+		
+		return [add, substract, multiply, divide];
+	}
+	
+	//ES6 Destructuring (new way of assigning value to variables)
+	const [add, substract, multiply, divide] = calculate(5, 10);
+	
+	//display in browse
+	document.write("<p>Sum: " + add + "</p>");
+	document.write("<p>Difference: " + substract + "</p>");
+	document.write("<p>Product: " + multiply + "</p>");
+	document.write("<p>Division: " + divide + "</p>");
+	</script>
+	</body>
+</html>
+	
