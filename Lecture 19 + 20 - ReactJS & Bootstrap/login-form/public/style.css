@@ -1,0 +1,149 @@
+body {
+  overflow: hidden;
+}
+
+  
+h3{
+	font-family: arial;
+	font-size: 25px;
+	text-align: left; 
+	margin-top: -5px;
+	margin-left: 15px;
+	margin-bottom: 5px;
+	/* edit font sign in */
+}
+
+.card {
+	top: 2.5%;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* bentuk/besarnya box */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5)
+    /* untuk buat shadow box */
+ }
+
+.small {
+	font-family: arial;
+	font-size: 12px;
+	text-align: left;
+	margin-left: 15px;
+	margin-top: -5px;
+	color: gray;
+	/* edit font "sign in to check your registratrion progress" */
+}
+
+.form-content {
+  margin: 10px;
+  margin-top: -10px;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover 
+ 
+  {
+    border-width: 1.5px;
+    color: 1px solid white;
+    border-color: black;
+  /* ganti warna ketika text sedang di hover */
+  }
+  
+input[type="text"],
+input[type="password"] 
+
+{
+	margin-bottom: 10px;
+	margin-left: -10px;
+	width: 100%;
+	padding: 7.5px;
+	border: 1.5px solid;
+	color: rgb(215, 215, 215);
+	border-radius: 10px;
+	/* tempat input user dan password */
+}
+
+p {
+	font-family: arial;
+	font-size: 12px;
+	text-align: left;
+	/* edit font "forgot password" */
+}
+
+.divider {
+	font-family: arial;
+	text-align: center;
+	margin: 10px;
+	position: relative;
+	left: -5px; /* untuk sejajarkan dengan perantara 2 tombol */
+}
+
+.divider::before,
+.divider::after {
+	content: " ";
+	width: 125px;
+	height: 1.5px;
+	background-color: gray;
+	position: absolute;
+	top: 50%; /* supaya line sejajar dengan font or*/
+	
+
+}
+
+.divider::before {
+  left: 1;
+  transform: translateX(-113%); 
+  /* membuat line kiri*/
+}
+
+.divider::after {
+  right: 1;
+  transform: translateX(13%); 
+  /* membuat line kanan */
+}
+
+.submit  {
+	margin-left: -5px;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 10px 115px;
+	background-color: #1e7ce0;
+	color: rgb(255, 255, 255);
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	/* tombol "sign in" */
+}
+
+.submit:hover {
+  background-color: #0056b3; /* Berubah warna ketika cursor sedang hover ke tombol */
+}
+
+.social  {
+	margin-left: -5px;
+	font-size: 12px;
+	padding: 10px 80px;
+	background-color: rgb(249, 250, 252);
+	color: gray;
+	border-color: black;
+	border-radius: 30px;
+	cursor: pointer;
+	/* tombol "sign in with google" */
+}
+
+.social:hover {
+  background-color: lightgray; /* Berubah warna ketika cursor sedang hover ke tombol */
+}
+
+footer {
+	font-family: arial;
+	font-weight: bold;
+	margin-top: 25px;
+	font-size: 12px;
+	/* untuk buat footer */
+}
+
+a {
+  text-decoration: none;
+  /* membuat supaya href tidak memunculkan garis dibawah atau underline */
+}
